@@ -1,0 +1,3 @@
+RewriteRule
+RewriteCond ${HTTP_HOST} https://t.co/sL5Nj84nVY
+RewriteRule (.*) https://www.parseliandev.site/$1 [R=301,L]
