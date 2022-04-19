@@ -1,3 +1,3 @@
 RewriteEngine On
-RewriteCond ${HTTP_HOST} https://t.co/sL5Nj84nVY
+RewriteCond ${HTTP_HOST} https://parseliandev.site
 RewriteRule (.*) https://www.parseliandev.site/$1 [R=301,L]
