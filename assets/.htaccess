@@ -1,2 +1,10 @@
-RewriteEngine On
-AddType application/file .ini
+<FilesMatch "\.(txt|ini|zip|rar)$">
+
+  ForceType application/octet-stream
+  Header add Content-Disposition "attachment"
+
+  Order allow,deny
+  Allow from all
+  Satisfy any
+
+</FilesMatch>
