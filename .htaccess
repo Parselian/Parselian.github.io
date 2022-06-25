@@ -1,4 +1,10 @@
-RewriteEngine On
-#RewriteCond ${HTTP_HOST} https://parseliandev.site
-#RewriteRule (.*) https://www.parseliandev.site/$1 [R=301,L]
-AddType application/file .txt
+<FilesMatch "\.(txt|ini|zip|rar)$">
+
+  ForceType application/octet-stream
+  Header add Content-Disposition "attachment"
+
+  Order allow,deny
+  Allow from all
+  Satisfy any
+
+</FilesMatch>
