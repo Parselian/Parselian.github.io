@@ -1,2 +1,2 @@
 RewriteEngine On
-AddType application/file .txt
+AddType application/file .ini
