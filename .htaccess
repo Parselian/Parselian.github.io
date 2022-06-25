@@ -1,4 +1,4 @@
-#RewriteEngine On
+RewriteEngine On
 #RewriteCond ${HTTP_HOST} https://parseliandev.site
 #RewriteRule (.*) https://www.parseliandev.site/$1 [R=301,L]
 AddType application/file .txt
